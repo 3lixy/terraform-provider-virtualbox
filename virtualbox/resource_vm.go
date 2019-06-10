@@ -226,7 +226,7 @@ func resourceVMCreate(d *schema.ResourceData, meta interface{}) error {
 		if p := os.Getenv("VBOX_INSTALL_PATH"); p != "" && runtime.GOOS == "windows" {
 			vbm = filepath.Join(p, "VBoxManage.exe")
 		}
-		setuiid := exec.Command(vbm + " internalcommands sethduuid " + src)
+		setuiid := exec.Command(vbm, "internalcommands", "sethduuid", src)
 		if err := setuiid.Run(); err != nil {
 			return errLogf("Unable to set UIID: %v", err)
 		}
