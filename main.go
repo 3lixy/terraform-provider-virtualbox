@@ -5,7 +5,7 @@ package main
 
 import (
 	"github.com/hashicorp/terraform/plugin"
-	"github.com/terra-farm/terraform-provider-virtualbox/virtualbox"
+	"github.com/3lixy/terraform-provider-virtualbox/virtualbox"
 )
 
 func main() {
