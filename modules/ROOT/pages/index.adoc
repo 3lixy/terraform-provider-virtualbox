@@ -2,4 +2,4 @@
 
 Inspired by link::https://github.com/hooklift/terraform-provider-vix[terraform-provider-vix]
 
-Donated to the `terra-farm` group by link::https://github.com/ccll[`ccll`]
+Donated to the `3lixy` group by link::https://github.com/ccll[`ccll`]
