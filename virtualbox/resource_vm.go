@@ -190,7 +190,7 @@ func resourceVMCreate(d *schema.ResourceData, meta interface{}) error {
         if err != nil {
             return errLogf("Get the current user: %v", err)
 	    }
-        vm_base_path := usr.HomeDir
+        vm_base_path = usr.HomeDir
 	}
     goldFolder := filepath.Join(vm_base_path, ".terraform/virtualbox/gold")
     machineFolder := filepath.Join(vm_base_path, ".terraform/virtualbox/machine")
