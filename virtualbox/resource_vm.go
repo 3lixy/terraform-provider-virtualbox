@@ -96,6 +96,11 @@ func resourceVM() *schema.Resource {
 				Optional: true,
 				Default:  "",
 			},
+			"vm_base_path": &schema.Schema{
+				Type:     schema.TypeString
+				Optional: true,
+				Default:  "",
+			}
 
 			"network_adapter": &schema.Schema{
 				Type:     schema.TypeList,
@@ -179,12 +184,16 @@ func resourceVMCreate(d *schema.ResourceData, meta interface{}) error {
 	}
 
 	/* Get gold folder and machine folder */
-	usr, err := user.Current()
-	if err != nil {
-		return errLogf("Get the current user: %v", err)
+	vm_base_path := d.Get("vm_base_path").(string)
+	if len(vm_base_path) == 0 {
+        usr, err := user.Current()
+        if err != nil {
+            return errLogf("Get the current user: %v", err)
+	    }
+        vm_base_path := usr.HomeDir
 	}
-	goldFolder := filepath.Join(usr.HomeDir, ".terraform/virtualbox/gold")
-	machineFolder := filepath.Join(usr.HomeDir, ".terraform/virtualbox/machine")
+    goldFolder := filepath.Join(vm_base_path, ".terraform/virtualbox/gold")
+    machineFolder := filepath.Join(vm_base_path, ".terraform/virtualbox/machine")
 	os.MkdirAll(goldFolder, 0740)
 	os.MkdirAll(machineFolder, 0740)
 
