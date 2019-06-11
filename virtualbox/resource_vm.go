@@ -100,7 +100,7 @@ func resourceVM() *schema.Resource {
 				Type:     schema.TypeString,
 				Optional: true,
 				Default:  "",
-			}
+			},
 
 			"network_adapter": &schema.Schema{
 				Type:     schema.TypeList,
