@@ -97,7 +97,7 @@ func resourceVM() *schema.Resource {
 				Default:  "",
 			},
 			"vm_base_path": &schema.Schema{
-				Type:     schema.TypeString
+				Type:     schema.TypeString,
 				Optional: true,
 				Default:  "",
 			}
