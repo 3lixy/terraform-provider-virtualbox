@@ -20,7 +20,7 @@ import (
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/helper/schema"
 	"github.com/pkg/errors"
-	vbox "github.com/3lixy/go-virtualbox"
+	vbox "github.com/terra-farm/go-virtualbox"
 )
 
 var (

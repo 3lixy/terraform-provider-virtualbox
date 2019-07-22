@@ -1,22 +1,22 @@
-[![Build Status](https://travis-ci.org/3lixy/terraform-provider-virtualbox.svg?branch=master)](https://travis-ci.org/3lixy/terraform-provider-virtualbox)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2F3lixy%2Fterraform-provider-virtualbox.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2F3lixy%2Fterraform-provider-virtualbox?ref=badge_shield)
-[![Gitter](https://badges.gitter.im/3lixy/terraform-provider-virtualbox.svg)](https://gitter.im/3lixy/terraform-provider-virtualbox?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Build Status](https://travis-ci.org/terra-farm/terraform-provider-virtualbox.svg?branch=master)](https://travis-ci.org/terra-farm/terraform-provider-virtualbox)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fterra-farm%2Fterraform-provider-virtualbox.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fterra-farm%2Fterraform-provider-virtualbox?ref=badge_shield)
+[![Gitter](https://badges.gitter.im/terra-farm/terraform-provider-virtualbox.svg)](https://gitter.im/terra-farm/terraform-provider-virtualbox?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 # VirtualBox provider for Terraform
 
 Inspired by [terraform-provider-vix](https://github.com/hooklift/terraform-provider-vix)
 
-Donated to the `3lixy` group by [`ccll`](https://github.com/ccll)
+Donated to the `terra-farm` group by [`ccll`](https://github.com/ccll)
 
-Published documentation is located on the [Terra-Farm website](https://3lixy.github.io/provider-virtualbox/).
+Published documentation is located on the [Terra-Farm website](https://terra-farm.github.io/provider-virtualbox/).
 
 # How to install
 
-1. go get github.com/3lixy/terraform-provider-virtualbox
+1. go get github.com/terra-farm/terraform-provider-virtualbox
 
 # How to build from source
 
-1. git clone https://github.com/3lixy/terraform-provider-virtualbox
+1. git clone https://github.com/terra-farm/terraform-provider-virtualbox
 1. cd terraform-provider-virtualbox
 1. dep ensure
 1. go build
@@ -107,4 +107,4 @@ output "IPAddr" {
 
 
 ## License
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2F3lixy%2Fterraform-provider-virtualbox.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2F3lixy%2Fterraform-provider-virtualbox?ref=badge_large)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fterra-farm%2Fterraform-provider-virtualbox.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fterra-farm%2Fterraform-provider-virtualbox?ref=badge_large)

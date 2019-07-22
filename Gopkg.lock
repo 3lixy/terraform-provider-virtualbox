@@ -485,7 +485,7 @@
 [[projects]]
   branch = "master"
   digest = "1:62c12a75d0a4e0196df185b12780b215d38107d57ad435af79d8fcc54279841e"
-  name = "github.com/3lixy/go-virtualbox"
+  name = "github.com/terra-farm/go-virtualbox"
   packages = ["."]
   pruneopts = "UT"
   revision = "80eb7494846409158e5c895255ba52e852a15f4b"
@@ -655,7 +655,7 @@
     "github.com/hashicorp/terraform/plugin",
     "github.com/hashicorp/terraform/terraform",
     "github.com/smartystreets/goconvey/convey",
-    "github.com/3lixy/go-virtualbox",
+    "github.com/terra-farm/go-virtualbox",
     "github.com/3lixy/terraform-provider-virtualbox/virtualbox",
   ]
   solver-name = "gps-cdcl"
